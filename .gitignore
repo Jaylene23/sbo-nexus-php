@@ -1,0 +1,25 @@
+# Local secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Composer-installed dependencies
+/vendor/
+
+# User-uploaded runtime content (keep access-control files only)
+/uploads/**
+!/uploads/
+/uploads/.htaccess
+/uploads/*/
+!/uploads/*/.htaccess
+
+# Logs and local/editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local database exports/backups
+*.sql.bak
+*.dump
